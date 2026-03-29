@@ -94,3 +94,18 @@ Hello, World!
 * Conditional statements (`if-else`)
 * String concatenation using `+`
 * Basic input validation
+
+# UC3: Display "Hello" with Command-Line Argument or Default Message
+
+## Description
+The application accepts a user's name as a command-line argument. If no name is provided, it defaults to "World".
+
+## Main Flow
+1. Check if argument exists
+2. If yes → use args[0]
+3. If no → use "World"
+4. Print greeting
+
+## Example
+java HelloApp Alice → Hello, Alice!
+java HelloApp → Hello, World!
