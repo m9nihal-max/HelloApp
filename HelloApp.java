@@ -3,10 +3,21 @@ public class HelloApp {
 
         String name;
 
-        if (args.length > 0) {
-            name = String.join(", ", args); // joins all names
-        } else {
+        if (args.length == 0) {
             name = "World";
+        } else {
+            StringBuilder nameBuilder = new StringBuilder();
+            boolean first = true;
+
+            for (String n : args) {
+                if (!first) {
+                    nameBuilder.append(", ");
+                }
+                nameBuilder.append(n);
+                first = false;
+            }
+
+            name = nameBuilder.toString();
         }
 
         System.out.println("Hello, " + name + "!");
