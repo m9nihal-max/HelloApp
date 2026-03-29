@@ -109,3 +109,24 @@ The application accepts a user's name as a command-line argument. If no name is 
 ## Example
 java HelloApp Alice → Hello, Alice!
 java HelloApp → Hello, World!
+
+# UC4: Display "Hello" with Multiple Command-Line Arguments or Default Message
+
+## Description
+The application accepts multiple names as command-line arguments and displays a greeting for all names. If no names are provided, it defaults to "World".
+
+## Main Flow
+1. Check if arguments exist
+2. If yes → join all names using comma
+3. If no → use "World"
+4. Print greeting
+
+## Example
+java HelloApp Alice Bob → Hello, Alice, Bob!
+java HelloApp → Hello, World!
+
+## Concepts Learned
+- Arrays
+- String.join()
+- Conditional Statements
+- Multiple Inputs Handling
