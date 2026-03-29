@@ -130,3 +130,25 @@ java HelloApp → Hello, World!
 - String.join()
 - Conditional Statements
 - Multiple Inputs Handling
+
+# UC5: Display "Hello" with Multiple Command-Line Arguments using Enhanced For Loop
+
+## Description
+The application accepts multiple names as command-line arguments and displays a greeting. It uses an enhanced for loop (for-each) to iterate through all inputs. If no arguments are provided, it defaults to "World".
+
+## Main Flow
+1. Check if arguments exist
+2. If no arguments → set name = "World"
+3. If arguments exist → iterate using enhanced for loop
+4. Build comma-separated names
+5. Print greeting
+
+## Example
+java HelloApp Alice Bob → Hello, Alice, Bob!
+java HelloApp → Hello, World!
+
+## Concepts Learned
+- Enhanced For Loop (for-each)
+- StringBuilder
+- Arrays
+- Conditional Statements
