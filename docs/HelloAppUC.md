@@ -22,3 +22,75 @@ public class HelloApp {
         System.out.println("Hello World");
     }
 }
+
+## UC2: Display "Hello" with Command-Line Argument
+
+### Description
+
+The application accepts a user's name as a command-line argument and displays a personalized greeting. This enhances the functionality of UC1 by allowing dynamic user input.
+
+### Disadvantages of Previous Use Case
+
+UC1 only displays a static message ("Hello, World!") and does not allow user input or customization.
+
+### Preconditions
+
+* The application is executed from the command line
+* A user may or may not provide a name as an argument
+
+### Main Flow
+
+1. User runs the application
+2. Application checks if any command-line arguments are provided
+3. If an argument is present, it reads the first argument (`args[0]`)
+4. Application prints "Hello, <name>!"
+5. If no argument is provided, it prints "Hello, World!"
+6. Application terminates
+
+### Postconditions
+
+* A personalized greeting is displayed if a name is provided
+* A default greeting is displayed if no input is given
+
+### Code Example
+
+```java
+if (args.length > 0) {
+    System.out.println("Hello, " + args[0] + "!");
+} else {
+    System.out.println("Hello, World!");
+}
+```
+
+### Example Output
+
+**Input:**
+
+```
+java HelloApp Alice
+```
+
+**Output:**
+
+```
+Hello, Alice!
+```
+
+**Input:**
+
+```
+java HelloApp
+```
+
+**Output:**
+
+```
+Hello, World!
+```
+
+### Concepts Learned
+
+* Command-line arguments (`args[]`)
+* Conditional statements (`if-else`)
+* String concatenation using `+`
+* Basic input validation
