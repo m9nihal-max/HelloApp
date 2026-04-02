@@ -174,3 +174,23 @@ java HelloApp → Hello, World!
 - StringBuilder
 - substring() method
 - String manipulation
+
+# UC7: Display "Hello" using String.join()
+
+## Description
+The application accepts multiple command-line arguments and prints a greeting. It uses String.join() to combine names with a delimiter. If no arguments are provided, it defaults to "World".
+
+## Main Flow
+1. Check args length
+2. If 0 → "World"
+3. Else → use String.join(", ", args)
+4. Print greeting
+
+## Example
+java HelloApp Alice Bob → Hello, Alice, Bob!
+java HelloApp → Hello, World!
+
+## Concepts Learned
+- String.join()
+- Command-line arguments
+- Cleaner code design
