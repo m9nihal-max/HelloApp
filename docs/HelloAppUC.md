@@ -152,3 +152,25 @@ java HelloApp → Hello, World!
 - StringBuilder
 - Arrays
 - Conditional Statements
+
+# UC6: Display "Hello" with Multiple Command-Line Arguments using substring()
+
+## Description
+The application accepts multiple names as command-line arguments and prints a greeting. It uses an enhanced for loop to process inputs and the substring() method to remove the trailing delimiter. If no arguments are provided, it defaults to "World".
+
+## Main Flow
+1. Check if arguments exist
+2. If none → set name = "World"
+3. If present → append all names with ", "
+4. Remove last delimiter using substring()
+5. Print greeting
+
+## Example
+java HelloApp Alice Bob → Hello, Alice, Bob!
+java HelloApp → Hello, World!
+
+## Concepts Learned
+- Enhanced For Loop
+- StringBuilder
+- substring() method
+- String manipulation
