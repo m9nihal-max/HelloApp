@@ -7,17 +7,18 @@ public class HelloApp {
             name = "World";
         } else {
             StringBuilder nameBuilder = new StringBuilder();
-            boolean first = true;
 
+            // Add all names with ", "
             for (String n : args) {
-                if (!first) {
-                    nameBuilder.append(", ");
-                }
-                nameBuilder.append(n);
-                first = false;
+                nameBuilder.append(n).append(", ");
             }
 
-            name = nameBuilder.toString();
+            // Remove last ", "
+            if (nameBuilder.length() > 0) {
+                name = nameBuilder.substring(0, nameBuilder.length() - 2);
+            } else {
+                name = "World";
+            }
         }
 
         System.out.println("Hello, " + name + "!");
